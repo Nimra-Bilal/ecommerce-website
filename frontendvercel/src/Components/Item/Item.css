@@ -1,0 +1,110 @@
+.item {
+    width: 280px; /* Sets a fixed width for the item container */
+  }
+  
+  .item img {
+    width: 100%; /* Ensures the image fits the item container */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .item p {
+    margin: 6px 0; /* Adds vertical spacing above and below the paragraph */
+    font-size: 16px; /* Ensures readability */
+    text-align: center; /* Centers the name text */
+  }
+  
+  .item-prices {
+    display: flex; /* Makes the prices a flex container */
+    gap: 20px; /* Adds space between the new price and old price */
+    justify-content: center; /* Centers the price container */
+  }
+  
+  .item-price-new {
+    color: #374151; /* Dark gray color for the new price */
+    font-size: 18px; /* Sets font size */
+    font-weight: 600; /* Semi-bold font weight */
+  }
+  
+  .item-price-old {
+    color: #8c8c8c; /* Lighter gray color for the old price */
+    font-size: 16px; /* Adjusted for better alignment */
+    font-weight: 500; /* Medium font weight */
+    text-decoration: line-through; /* Adds strikethrough effect for old price */
+  }
+  
+  @media (max-width: 1280px) {
+    .item {
+      width: 220px;
+    }
+  
+    .item img {
+      width: 100%; /* Adjusted for container width */
+    }
+  
+    .item p {
+      font-size: 14px;
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .item {
+      width: 170px;
+    }
+  
+    .item img {
+      width: 100%;
+    }
+  
+    .item p {
+      font-size: 13px;
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .item {
+      width: 160px;
+    }
+  
+    .item img {
+      width: 100%;
+    }
+  
+    .item p {
+      font-size: 12px;
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .item {
+      width: 120px;
+    }
+  
+    .item img {
+      width: 100%;
+    }
+  
+    .item p {
+      font-size: 11px;
+    }
+  
+    .item-price-new,
+    .item-price-old {
+      font-size: 11px;
+    }
+  }
+  
