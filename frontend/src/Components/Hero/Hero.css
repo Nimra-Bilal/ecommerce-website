@@ -1,0 +1,179 @@
+.hero {
+    height: 150vh; /* Full height of the viewport */
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%) !important; 
+    display: flex; /* Makes it a flex container */
+  }
+  
+  .hero-left {
+    display: flex; /* Flex container for the left section */
+    flex: 1; /* Takes equal space in the flex layout */
+    flex-direction: column; /* Align items in a column */
+    justify-content: center; /* Vertically center content */
+    gap: 20px; /* Adds space between items */
+    padding-left: 180px; /* Adds left padding */
+    line-height: 1.1; /* Adjusts line height for better readability */
+  }
+  
+  .hero-left h2 {
+    color: #090909; /* Sets the color of the h2 text */
+    font-size: 26px; /* Font size for the h2 text */
+    font-weight: 600; /* Semi-bold font weight */
+  }
+  
+  .hero-left p {
+    color: #171717; /* Sets the color of the paragraph text */
+    font-size: 100px; /* Large font size for the paragraph */
+    font-weight: 700; /* Bold font weight */
+  }
+  
+  .hero-hand-icon {
+    display: flex; /* Makes a flex container */
+    align-items: center; /* Vertically centers items */
+    gap: 20px; /* Adds space between items */
+  }
+  
+  .hero-hand-icon img {
+    width: 105px; /* Sets the image width */
+  }
+  
+  .hero-latest-btn {
+    display: flex; /* Flex container for button content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 15px; /* Space between inner items */
+    width: 310px; /* Button width */
+    height: 70px; /* Button height */
+    border-radius: 75px; /* Fully rounded corners */
+    margin-top: 30px; /* Space above the button */
+    background: #ff4141; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 22px; /* Font size for button text */
+    font-weight: 500; /* Semi-bold font weight */
+  }
+  
+  .hero-right {
+    flex: 1; /* Takes equal space in the flex layout */
+    display: flex; /* Flex container */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+  }
+  
+  .hero-right img {
+    max-width: 80%; /* Ensures image fits its container */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  @media (max-width: 1280px) {
+    .hero-left {
+      padding-left: 100px;
+    }
+  
+    .hero-left h2 {
+      font-size: 22px;
+    }
+  
+    .hero-left p {
+      font-size: 16px;
+    }
+  
+    .hero-hand-icon img {
+      width: 80px;
+    }
+  
+    .hero-latest-btn {
+      gap: 10px;
+      width: 250px;
+      height: 60px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  
+    .hero-right img {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-left {
+      padding-left: 80px;
+    }
+  
+    .hero-left h2 {
+      font-size: 20px;
+    }
+  
+    .hero-left p {
+      font-size: 50px;
+    }
+  
+    .hero-hand-icon img {
+      width: 65px;
+    }
+  
+    .hero-latest-btn {
+      width: 220px;
+      height: 50px;
+      font-size: 16px;
+    }
+  
+    .hero-right img {
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .hero {
+      padding-left: 30px;
+    }
+  
+    .hero-left h2 {
+      font-size: 16px;
+    }
+  
+    .hero-left p {
+      font-size: 40px;
+    }
+  
+    .hero-hand-icon img {
+      width: 50px;
+    }
+  
+    .hero-latest-btn {
+      width: 175px;
+      height: 40px;
+      font-size: 13px;
+    }
+  
+    .hero-right img {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-left h2 {
+      font-size: 18px;
+    }
+  
+    .hero-left p {
+      font-size: 50px;
+    }
+  
+    .hero-hand-icon img {
+      width: 55px;
+    }
+  
+    .hero-latest-btn {
+      width: 200px;
+      height: 45px;
+      font-size: 14px;
+    }
+  
+    .hero-right {
+      display: none;
+    }
+  }
+  
